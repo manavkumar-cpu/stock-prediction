@@ -1,0 +1,4 @@
+Split,Labeled_Rows,First_Forecast_Date,Last_Forecast_Date,First_Target_Date,Last_Target_Date
+train,2515,2010-01-04,2019-12-30,2010-01-05,2019-12-31
+validation,756,2019-12-31,2022-12-29,2020-01-02,2022-12-30
+test,752,2022-12-30,2025-12-30,2023-01-03,2025-12-31

@@ -1,0 +1,18 @@
+{
+  "model": "naive_persistence",
+  "experiment": "close_only_h1",
+  "ticker": "AAPL",
+  "split": "validation",
+  "horizon": 1,
+  "samples": 756,
+  "first_target": "2020-01-02",
+  "last_target": "2022-12-30",
+  "price_basis": "Yahoo Close, USD, split-adjusted",
+  "metrics": {
+    "MAE": 2.0761999907316984,
+    "RMSE": 2.7912894674222684,
+    "MSE": 7.7912968909424904,
+    "MAPE_percent": 1.6671252573707545,
+    "R2": 0.9916498688530186
+  }
+}

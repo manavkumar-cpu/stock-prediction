@@ -1,0 +1,54 @@
+project:
+  name: stock-price-lstm
+  random_seed: 42
+training:
+  lstm_units: 32
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 100
+  patience: 10
+experiment:
+  name: close_only_h1
+market:
+  tickers:
+    SP500: "^GSPC"
+    NASDAQ: "^IXIC"
+    VIX: "^VIX"
+  lag_sessions: 1
+data:
+  calendar: NASDAQ
+  ticker: AAPL
+  additional_tickers:
+    - MSFT
+    - GOOGL
+  start_date: "2010-01-01"
+  end_date_exclusive: "2026-01-01"
+  interval: "1d"
+  auto_adjust: false
+  raw_dir: data/raw
+  processed_dir: data/processed
+
+forecast:
+  target_column: Close
+  feature_columns:
+    - Close
+  window_size: 60
+  horizon: 1
+  candidate_window_sizes:
+    - 20
+    - 30
+    - 60
+    - 120
+  later_horizons:
+    - 5
+    - 10
+
+split:
+  train_end: "2019-12-31"
+  validation_end: "2022-12-31"
+  test_end: "2025-12-31"
+
+paths:
+  artifacts: artifacts
+  figures: reports/figures
+  metrics: reports/metrics

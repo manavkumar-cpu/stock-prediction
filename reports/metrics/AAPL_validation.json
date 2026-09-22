@@ -1,0 +1,40 @@
+{
+  "rows": 4024,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "missing_columns": [],
+    "duplicate_dates": 0,
+    "chronological_order": true,
+    "dates_outside_range": 0,
+    "expected_sessions": 4024,
+    "missing_sessions": [],
+    "unexpected_sessions": [],
+    "dtypes": {
+      "Open": "float64",
+      "High": "float64",
+      "Low": "float64",
+      "Close": "float64",
+      "Adj Close": "float64",
+      "Volume": "int64"
+    },
+    "missing_values": {
+      "Open": 0,
+      "High": 0,
+      "Low": 0,
+      "Close": 0,
+      "Adj Close": 0,
+      "Volume": 0
+    },
+    "infinite_values": 0,
+    "rows_with_nonpositive_prices": 0,
+    "negative_volume_rows": 0,
+    "zero_volume_rows": 0,
+    "fractional_volume_rows": 0,
+    "inconsistent_ohlc_rows": 0,
+    "inconsistent_ohlc_dates": []
+  },
+  "status": "PASS",
+  "source_file": "data/raw/AAPL_2010-01-01_2026-01-01_raw.csv",
+  "calendar": "NASDAQ"
+}

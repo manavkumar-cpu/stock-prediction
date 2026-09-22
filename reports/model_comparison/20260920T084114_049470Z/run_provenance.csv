@@ -1,0 +1,7 @@
+Model,Source_Run,Protocol
+Naive,artifacts/attention_walk_forward/w120/20260919T185751_441646Z,Next Close equals forecast-date Close
+LSTM_w120,artifacts/attention_walk_forward/w120/20260919T185751_441646Z,120 sessions; common training dates
+Attention_LSTM_w120,artifacts/attention_walk_forward/w120/20260919T185751_441646Z,120 sessions; common training dates
+XGBoost_w120,artifacts/xgboost_walk_forward/20260919T183633_049138Z,120 sessions flattened; depth selected per fold
+ARIMA,artifacts/arima_walk_forward/20260919T174348_864117Z,Close only; order selected per fold
+GRU_w60,artifacts/gru_walk_forward/20260919T155453_690801Z,"60 sessions; earlier, larger training sample set"

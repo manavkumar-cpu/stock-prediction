@@ -1,0 +1,12 @@
+numpy
+pandas
+yfinance
+matplotlib
+scikit-learn
+statsmodels
+tensorflow
+PyYAML
+ipykernel
+pytest
+pandas_market_calendars
+xgboost

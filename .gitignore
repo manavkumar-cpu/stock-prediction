@@ -1,0 +1,21 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Downloaded data and generated artifacts
+data/raw/
+data/processed/
+artifacts/
+# Runtime logs
+logs/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# macOS files
+.DS_Store
